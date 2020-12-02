@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_success"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceTxtView"
+            android:textStyle="bold"
+            android:textAlignment="inherit"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:text="دانلود/آپلود"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/connectStatusView"
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:textAlignment="inherit"
+                android:textColor="#3A3A3A"
+                android:textSize="14dp"
+                android:text="---"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/tryAgainConnectBtnView"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:text="تلاش مجدد"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بازگشت"
+            android:id="@+id/returnBtn"
+            android:onClick="goBackFromRegisterPage"
+            android:layout_margin="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainOpLayout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newServerIpLbl"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    android:textAlignment="inherit"
+                    android:layout_margin="5dp"
+                    android:textColor="#3A3A3A"
+                    android:textSize="12dp"
+                    android:text="آدرس سرور: "
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:id="@+id/newServerIpVal"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/downloadBtn"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:text="شروع عملیات دانلود"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/uploadBtn"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:text="شروع عملیات آپلود"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="---"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_bg_edittext_maintenance_two"
+                android:id="@+id/opStatus"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

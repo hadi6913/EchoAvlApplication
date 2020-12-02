@@ -1,0 +1,21 @@
+package com.ar.echoafcavlapplication.Enums;
+
+public enum UiCommandTypeEnum {
+    OUT_OF_SERVICE,
+    MAINTENANCE,
+    INITIALIZING,
+    LOGIN_FOR_OPEN_MAINTENANCE,
+    TAP_CARD,
+    SUCCESS,
+    FAILED,
+    CLOSE_SHIFT,
+    DRIVER_STATS,
+    LINE_ADMIN_PAGE,
+    SUMMARY_REPORT,
+    CLOSE_SHIFT_CONFIRM,
+    HARDWARE_TEST,
+    OPERATOR_PAGE,
+    UPLOAD_DOWNLOAD_PAGE,
+    REGISTER_PAGE,
+    DRIVER_PAGE
+}

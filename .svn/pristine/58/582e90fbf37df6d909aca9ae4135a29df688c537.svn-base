@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EchoAfcAvlApplication</string>
+    <string name="app_package_name">appPackageName</string>
+    <string name="path">path</string>
+</resources>

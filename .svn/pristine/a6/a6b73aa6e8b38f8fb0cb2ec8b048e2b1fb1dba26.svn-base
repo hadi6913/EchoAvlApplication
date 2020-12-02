@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_maintenance"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="32dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_bg_close_shift"
+            android:src="@drawable/megaphone" />
+
+        <!--<ImageView
+            android:src="@drawable/checked"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_viewOne"
+            android:text="آمار شیفت"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startDate"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#EAEAEA"
+            android:textStyle="bold"
+            android:text="---"
+            android:textSize="18dp"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/endDate"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#EAEAEA"
+            android:textSize="18dp"
+            android:text="---"
+            android:padding="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transactionCounter"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:text="---"
+            android:textSize="20dp"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

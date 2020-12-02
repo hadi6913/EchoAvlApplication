@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_line_admin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcomeTxtView"
+                android:text="تست سخت افزار"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textAlignment="inherit" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="325dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="inherit"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:text="بررسی شبکه دستگاه:"
+                        android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/netResult"
+                            android:layout_weight="0.8"
+                            android:layout_margin="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/unknown"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.2"
+                            android:onClick="startForGTest"
+                            android:text="شروع تست"
+                            android:id="@+id/netTestBtn"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_viewTwo"
+                        android:textAlignment="inherit"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000000"
+                        android:text="بررسی ماژول GPS:"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/gpsResult"
+                            android:layout_weight="0.8"
+                            android:layout_margin="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/unknown"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.2"
+                            android:text="شروع تست"
+                            android:onClick="startGPSTest"
+                            android:id="@+id/gpsTestBtn"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="inherit"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/gpsTestTxt"
+                        android:textColor="#000000"
+                        android:layoutDirection="rtl"
+                        android:text="---"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/memoryTxt"
+
+                        android:background="@drawable/btn_bg_paramversion"
+                        android:textAlignment="inherit"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:textColor="#fff"
+                        android:text="---"
+                        android:layoutDirection="rtl"
+                        android:textSize="16dp" />
+
+
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="بازگشت"
+                android:onClick="backToLineAdminPage"
+                android:id="@+id/exitHardwareTestBtn"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

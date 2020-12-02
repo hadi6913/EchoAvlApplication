@@ -1,0 +1,69 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication",
+      "sdkFolder": "D:\\sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app",
+      "makeFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\.cxx",
+      "cxxFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx",
+      "ndkFolder": "D:\\sdk\\ndk-bundle",
+      "ndkVersion": "13.1.3345770",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64",
+        "MIPS",
+        "MIPS64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64",
+        "MIPS",
+        "MIPS64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\build\\intermediates\\ndkBuild\\debug\\lib",
+    "objFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local",
+    "jsonFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug",
+    "gradleBuildOutputFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI",
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64",
+      "MIPS",
+      "MIPS64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "MIPS",
+  "abiPlatformVersion": 19,
+  "cxxBuildFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips",
+  "jsonFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\cxx\\debug\\mips",
+  "objFolder": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\mips",
+  "buildCommandFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\build_command.txt",
+  "buildOutputFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\build_output.txt",
+  "modelOutputFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\json_generation_record.json",
+  "compileCommandsJsonFile": "F:\\arayeh_android_projects\\EchoAfcAvlApplication\\app\\.cxx\\ndkBuild\\debug\\mips\\compile_commands.json"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_error">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="32dp"
+            android:padding="10dp"
+            android:src="@drawable/error" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_viewOne"
+            android:text="تراکنش ناموفق"
+            android:textColor="#CD0000"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodyTxtView"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:text="---"
+            android:padding="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_viewFour"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#CD0000"
+            android:text="لطفا دوباره تلاش کنید"
+            android:textSize="18dp"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

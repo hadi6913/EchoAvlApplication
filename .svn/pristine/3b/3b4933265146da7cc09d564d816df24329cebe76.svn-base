@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_login_maintenance">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:text="ورود به بخش نگهداری"
+            android:padding="1dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceTxtView"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:gravity="start"
+            android:text="برای ادامه لطفا نام کاربری و رمز عبور را وارد کنید"
+            android:padding="1dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:id="@+id/username"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#9F0F24"
+            android:background="@drawable/btn_bg_edittext_maintenance"
+            android:textSize="16dp"
+            android:hint="  نام کاربری"
+            android:drawableRight="@drawable/user"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/password"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:drawableRight="@drawable/pass"
+            android:textColor="#9F0F24"
+            android:inputType="textPassword"
+            android:background="@drawable/btn_bg_edittext_maintenance"
+            android:textSize="16dp"
+            android:hint="  رمز عبور  "
+            android:layout_margin="5dp"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:textStyle="bold"
+            android:textColor="#E6E6E6"
+            android:layout_marginTop="5dp"
+            android:alpha="0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:background="@drawable/btn_bg__login_error"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="---"
+            android:padding="8dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/goToMaintenanceBTN"
+            android:layout_gravity="right"
+            android:onClick="doLogin"
+            android:textColor="@color/colorGreen"
+            android:textSize="16dp"
+            android:text="ورود"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/restartBTN"
+            android:layout_gravity="right"
+            android:onClick="restart"
+            android:textColor="@color/colorRed"
+            android:textSize="16dp"
+            android:text="خروج"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

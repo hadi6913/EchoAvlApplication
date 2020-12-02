@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_close_shift">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="32dp"
+            android:padding="10dp"
+            android:src="@drawable/vault" />
+
+        <!--<ImageView
+            android:src="@drawable/checked"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="22dp"
+            android:text="شیفت بسته است"
+            android:padding="1dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceTxtView"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="لطفا کارت راننده را ارائه دهید"
+            android:padding="1dp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

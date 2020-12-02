@@ -1,0 +1,5 @@
+F:/arayeh_android_projects/EchoAfcAvlApplication/app/build/intermediates/ndkBuild/debug/obj/local/mips64/objs-debug/serial_port/SerialPort.o: \
+  F:/arayeh_android_projects/EchoAfcAvlApplication/app/src/main/jni/SerialPort.c \
+  F:/arayeh_android_projects/EchoAfcAvlApplication/app/src/main/jni/SerialPort.h
+
+F:/arayeh_android_projects/EchoAfcAvlApplication/app/src/main/jni/SerialPort.h:

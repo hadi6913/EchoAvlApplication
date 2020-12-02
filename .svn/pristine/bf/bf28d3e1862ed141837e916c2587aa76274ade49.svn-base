@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'echoKey'
+            keyPassword '123456'
+            storeFile file('D:/programs/android/key/echo.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.ar.echoafcavlapplication"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 26
+        versionName "1.0.3.6"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            signingConfig signingConfigs.config
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta6"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    /*implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'*/
+    implementation 'org.slf4j:slf4j-api:1.7.21'
+    implementation 'com.github.tony19:logback-android-core:1.1.1-6'
+    implementation('com.github.tony19:logback-android-classic:1.1.1-6') {
+        // workaround issue #73
+        exclude group: 'com.google.android', module: 'android'
+    }
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+    implementation group: 'commons-net', name: 'commons-net', version: '3.6'
+
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'com.github.samanzamani.persiandate:PersianDate:0.8'
+
+    implementation group: 'net.lingala.zip4j', name: 'zip4j', version: '1.3.2'
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'commons-codec:commons-codec:1.10'
+    implementation 'com.kevalpatel2106:hiddencamera:1.3.5'
+    implementation 'com.github.potterhsu:Pinger:v1.1'
+
+    implementation files('libs/libecho.jar')
+    implementation files('libs/database-connection-1.00.jar')
+    implementation files('libs/Universal_SDK_1.00.089.jar')
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.thanosfisherman.wifiutils:wifiutils:1.6.2'
+}

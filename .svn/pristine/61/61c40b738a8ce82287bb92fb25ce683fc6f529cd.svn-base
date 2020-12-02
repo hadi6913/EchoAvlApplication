@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_line_admin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcomeTxtView"
+                android:text=""
+                android:textColor="#F4F4F4"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textAlignment="inherit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_viewTwo"
+                android:textAlignment="inherit"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"
+                android:text="لطفا از گزینه های زیر برای ادامه انتخاب کنید:"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="startShiftFromLineAdminPage"
+                android:text="باز کردن شیفت کاری"
+                android:id="@+id/openShiftBtn"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="خلاصه عملکرد"
+                android:onClick="goToSummaryReportPage"
+                android:id="@+id/summaryReportBtn"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="openMaintenance"
+                android:text="ورود به بخش نگهداری"
+                android:id="@+id/maintenanceBtn"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="تست سخت افزار"
+                android:onClick="goToHardwareTestPage"
+                android:id="@+id/hardwareTestBtn"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ثبت دستگاه"
+                android:onClick="goToRegisterPageFromLineAdminPage"
+                android:id="@+id/registerBtn"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="خروج"
+                android:onClick="exitFromLineAdminPage"
+                android:id="@+id/exitBtn"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

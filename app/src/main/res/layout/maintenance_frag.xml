@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_maintenance">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:text="بخش نگهداری"
+            android:padding="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="8dp"
+            android:text="برای دیدن همه گزینه ها به سمت پایین اسکرول کنید"
+            android:padding="1dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:gravity="left"
+                    android:text="CC IP Address:"
+                    android:padding="1dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/ccIpAddress"
+                    android:layout_gravity="right"
+                    android:gravity="left"
+                    android:textColor="#000"
+                    android:background="@drawable/btn_bg_edittext_maintenance_two"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:gravity="left"
+                    android:text="Line ID:"
+                    android:padding="1dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/lineId"
+                    android:layout_gravity="right"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000"
+                    android:background="@drawable/btn_bg_edittext_maintenance_two"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:gravity="left"
+                    android:text="Bus ID:"
+                    android:padding="1dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/busId"
+                    android:layout_gravity="right"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:background="@drawable/btn_bg_edittext_maintenance_two"
+                    android:textSize="16dp"
+                    android:padding="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:textSize="14dp"
+                            android:gravity="left"
+                            android:text="FTP App Username:"
+                            android:padding="1dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:id="@+id/appUser"
+                            android:enabled="false"
+                            android:layout_gravity="right"
+                            android:gravity="left"
+                            android:inputType="text"
+                            android:textColor="#000"
+                            android:background="@drawable/btn_bg_edittext_maintenance_two"
+                            android:textSize="16dp"
+                            android:padding="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:textSize="14dp"
+                            android:gravity="left"
+                            android:text="FTP App Password:"
+                            android:padding="1dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:id="@+id/appPass"
+                            android:layout_gravity="right"
+                            android:gravity="left"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:textColor="#000"
+                            android:background="@drawable/btn_bg_edittext_maintenance_two"
+                            android:textSize="16dp"
+                            android:padding="15dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="1dp"
+                        android:text="FTP Stat Username:"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:id="@+id/statUser"
+                        android:layout_gravity="right"
+                        android:gravity="left"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:background="@drawable/btn_bg_edittext_maintenance_two"
+                        android:textSize="16dp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="14dp"
+                        android:gravity="left"
+                        android:text="FTP Stat Password:"
+                        android:padding="1dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:id="@+id/statPass"
+                        android:layout_gravity="right"
+                        android:gravity="left"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:background="@drawable/btn_bg_edittext_maintenance_two"
+                        android:textSize="16dp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg"
+            android:textStyle="bold"
+            android:textColor="#E6E6E6"
+            android:layout_marginTop="0dp"
+            android:alpha="0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:background="@drawable/btn_bg_maintenance_success"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="---"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/exitBTN"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:onClick="restart"
+                android:layout_weight="0.5"
+                android:textColor="@color/colorRed"
+                android:textSize="16dp"
+                android:text="خروج"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/saveBTN"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.5"
+                android:onClick="saveChanges"
+                android:textColor="@color/colorGreen"
+                android:textSize="16dp"
+                android:text="ذخیره"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:padding="15dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

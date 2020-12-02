@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/btn_bg_line_admin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcomeTxtView"
+                android:text="خلاصه عملکرد"
+                android:textColor="#F4F4F4"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textAlignment="inherit" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="330dp">
+
+                <TableLayout
+                    android:id="@+id/main_table"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:stretchColumns="0,1,2,3,4,5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="fill_parent">
+                </TableLayout>
+            </ScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="بازگشت"
+                android:onClick="backFromSummaryPage"
+                android:id="@+id/backToLineAdminPageBtn"
+                android:layout_margin="5dp"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
